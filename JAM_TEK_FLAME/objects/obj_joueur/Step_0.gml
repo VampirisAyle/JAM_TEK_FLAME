@@ -48,4 +48,4 @@ if (!keyboard_check(ord("Q")) && !keyboard_check(ord("D")) && !keyboard_check(or
 	image_index = 1;
 }
 
-move_and_collide(_movex, _movey, []);
+move_and_collide(_movex, _movey, [obj_map_collision]);

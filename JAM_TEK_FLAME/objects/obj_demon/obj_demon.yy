@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_joueur",
+  "%Name":"obj_demon",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_joueur",
+  "name":"obj_demon",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_joueur_bas",
-    "path":"sprites/spr_joueur_bas/spr_joueur_bas.yy",
+    "name":"spr_demon_bas",
+    "path":"sprites/spr_demon_bas/spr_demon_bas.yy",
   },
   "spriteMaskId":null,
   "visible":true,
