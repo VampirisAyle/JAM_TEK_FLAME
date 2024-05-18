@@ -36,6 +36,7 @@
   "name":"JAM_TEK_FLAME",
   "resources":[
     {"id":{"name":"obj_demon","path":"objects/obj_demon/obj_demon.yy",},},
+    {"id":{"name":"obj_firelight","path":"objects/obj_firelight/obj_firelight.yy",},},
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_joueur","path":"objects/obj_joueur/obj_joueur.yy",},},
     {"id":{"name":"obj_map_collision","path":"objects/obj_map_collision/obj_map_collision.yy",},},
@@ -55,7 +56,9 @@
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"spr_map_collision","path":"sprites/spr_map_collision/spr_map_collision.yy",},},
     {"id":{"name":"spr_parchemin","path":"sprites/spr_parchemin/spr_parchemin.yy",},},
+    {"id":{"name":"spr_pentacle","path":"sprites/spr_pentacle/spr_pentacle.yy",},},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},
+    {"id":{"name":"spr_tileset_campfire","path":"sprites/spr_tileset_campfire/spr_tileset_campfire.yy",},},
     {"id":{"name":"spr_tileset_forest","path":"sprites/spr_tileset_forest/spr_tileset_forest.yy",},},
     {"id":{"name":"tileset_forest","path":"tilesets/tileset_forest/tileset_forest.yy",},},
   ],

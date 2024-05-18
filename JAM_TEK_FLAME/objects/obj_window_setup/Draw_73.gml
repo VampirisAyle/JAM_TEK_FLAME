@@ -18,6 +18,9 @@ gpu_set_blendmode(bm_subtract);
 with (obj_joueur) {
 	draw_sprite_ext(spr_light, 0, self.x, self.y, _scale, _scale, 0, c_white, 255);
 }
+with (obj_firelight) {
+	draw_sprite_ext(spr_light, 0, self.x, self.y, 5, 5, 0, c_white, 255);
+}
 
 gpu_set_blendmode(bm_normal);
 

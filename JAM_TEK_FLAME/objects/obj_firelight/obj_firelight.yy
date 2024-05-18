@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_window_setup",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_firelight",
+  "eventList":[],
   "managed":true,
-  "name":"obj_window_setup",
+  "name":"obj_firelight",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
