@@ -19,25 +19,29 @@ if (keyboard_check(vk_shift) && endurance_regeneration == false) {
 	current_endurance -= 1;
 }
 
-if (keyboard_check(ord("Z"))) {
+if (keyboard_check(ord("R")) && dead == true) {
+	room_restart();
+}
+
+if (keyboard_check(ord("Z")) && dead == false) {
 	_movey -= _speed;
 	sprite_index = spr_joueur_haut;
 	sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 }
 
-if (keyboard_check(ord("S"))) {
+if (keyboard_check(ord("S")) && dead == false) {
 	_movey += _speed;
 	sprite_index = spr_joueur_bas;
 	sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 }
 
-if (keyboard_check(ord("D"))) {
+if (keyboard_check(ord("D")) && dead == false) {
 	_movex += _speed;
 	sprite_index = spr_joueur_droite;
 	sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 }
 
-if (keyboard_check(ord("Q"))) {
+if (keyboard_check(ord("Q")) && dead == false) {
 	_movex -= _speed;
 	sprite_index = spr_joueur_gauche;
 	sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
@@ -52,6 +56,9 @@ parchment_nearby = false;
 var _parchment = instance_nearest(x, y, obj_parchemin);
 if (_parchment != noone && distance_to_object(_parchment) < 16) {
     parchment_nearby = true;
+	draw_takup = true;
+} else {
+	draw_takup = false;
 }
 
 if (parchment_nearby && keyboard_check_pressed(ord("E")) && !has_parchment) {
@@ -65,3 +72,39 @@ if (keyboard_check_pressed(ord("T")) && has_parchment) {
 }
 
 move_and_collide(_movex, _movey, [obj_map_collision]);
+
+
+
+//AUDIO
+if (instance_exists(obj_demon)) {
+	var _distance = point_distance(x, y, obj_demon.x, obj_demon.y);
+
+	if (_distance > 350 && audio_playing != 0) {
+		audio_sound_gain(current_sound_played, 0, 2000);
+		audio_playing = 0;
+	}
+	if (_distance < 350 && _distance > 90 && audio_playing != 1) {
+		audio_sound_gain(current_sound_played, 0.6, 1000);
+		audio_sound_pitch(current_sound_played, 1);
+		audio_playing = 1;
+	}
+	if (_distance < 90 && audio_playing != 2) {
+		audio_sound_gain(current_sound_played, 0.7, 500);
+		audio_sound_pitch(current_sound_played, 1.5);
+		audio_playing = 2;
+	}
+	
+	show_debug_message(_distance);
+}
+
+if (dead == true) {
+	audio_stop_sound(current_sound_played);
+}
+
+
+
+//SPAWN
+if (obj_hud.time_to_spawn >= obj_hud.time_for_spawn && demon_spawn == false) {
+	var _demon = instance_create_layer(722, 666, "Instances", obj_demon);
+	demon_spawn = true;
+}
