@@ -40,6 +40,7 @@
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_joueur","path":"objects/obj_joueur/obj_joueur.yy",},},
     {"id":{"name":"obj_map_collision","path":"objects/obj_map_collision/obj_map_collision.yy",},},
+    {"id":{"name":"obj_parchemin","path":"objects/obj_parchemin/obj_parchemin.yy",},},
     {"id":{"name":"obj_window_setup","path":"objects/obj_window_setup/obj_window_setup.yy",},},
     {"id":{"name":"forest1","path":"rooms/forest1/forest1.yy",},},
     {"id":{"name":"spr_background_forest","path":"sprites/spr_background_forest/spr_background_forest.yy",},},

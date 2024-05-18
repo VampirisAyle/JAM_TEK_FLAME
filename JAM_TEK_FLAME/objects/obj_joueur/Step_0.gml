@@ -48,4 +48,20 @@ if (!keyboard_check(ord("Q")) && !keyboard_check(ord("D")) && !keyboard_check(or
 	image_index = 1;
 }
 
+parchment_nearby = false;
+var _parchment = instance_nearest(x, y, obj_parchemin);
+if (_parchment != noone && distance_to_object(_parchment) < 16) {
+    parchment_nearby = true;
+}
+
+if (parchment_nearby && keyboard_check_pressed(ord("E")) && !has_parchment) {
+    instance_destroy(_parchment);
+    has_parchment = true;
+}
+
+if (keyboard_check_pressed(ord("T")) && has_parchment) {
+    var _new_parchment = instance_create_layer(x, y, "Instances", obj_parchemin);
+    has_parchment = false;
+}
+
 move_and_collide(_movex, _movey, [obj_map_collision]);
