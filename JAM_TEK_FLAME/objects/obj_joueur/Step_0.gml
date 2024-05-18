@@ -93,8 +93,6 @@ if (instance_exists(obj_demon)) {
 		audio_sound_pitch(current_sound_played, 1.5);
 		audio_playing = 2;
 	}
-	
-	show_debug_message(_distance);
 }
 
 if (dead == true) {
