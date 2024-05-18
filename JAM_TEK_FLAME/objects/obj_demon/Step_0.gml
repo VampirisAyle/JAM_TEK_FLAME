@@ -1,4 +1,5 @@
-if (instance_exists(obj_joueur)) {
+
+f (instance_exists(obj_joueur)) {
 
 	var _movex = 0;
 	var _movey = 0;
