@@ -47,6 +47,7 @@
     {"id":{"name":"spr_joueur_haut","path":"sprites/spr_joueur_haut/spr_joueur_haut.yy",},},
     {"id":{"name":"spr_parchemin","path":"sprites/spr_parchemin/spr_parchemin.yy",},},
     {"id":{"name":"spr_tileset_forest","path":"sprites/spr_tileset_forest/spr_tileset_forest.yy",},},
+    {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
     {"id":{"name":"tileset_forest","path":"tilesets/tileset_forest/tileset_forest.yy",},},
   ],
   "resourceType":"GMProject",
