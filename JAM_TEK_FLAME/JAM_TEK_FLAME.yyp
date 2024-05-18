@@ -43,6 +43,7 @@
     {"id":{"name":"spr_joueur_droite","path":"sprites/spr_joueur_droite/spr_joueur_droite.yy",},},
     {"id":{"name":"spr_joueur_gauche","path":"sprites/spr_joueur_gauche/spr_joueur_gauche.yy",},},
     {"id":{"name":"spr_joueur_haut","path":"sprites/spr_joueur_haut/spr_joueur_haut.yy",},},
+    {"id":{"name":"spr_parchemin","path":"sprites/spr_parchemin/spr_parchemin.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
