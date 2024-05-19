@@ -19,6 +19,11 @@ if (keyboard_check(vk_shift) && endurance_regeneration == false) {
 	current_endurance -= 1;
 }
 
+if (keyboard_check(ord("V"))) {
+	room_restart();
+	room_goto(rm_victory);
+}
+
 if (keyboard_check(ord("X"))) {
 	room_restart();
 	room_goto(rm_menu1);
