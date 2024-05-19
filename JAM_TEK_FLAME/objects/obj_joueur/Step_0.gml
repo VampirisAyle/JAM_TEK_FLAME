@@ -19,7 +19,7 @@ if (keyboard_check(vk_shift) && endurance_regeneration == false) {
 	current_endurance -= 1;
 }
 
-if (keyboard_check(ord("V"))) {
+if (nb_parchemin_burn == nb_parchemin_burn_needed) {
 	room_restart();
 	room_goto(rm_victory);
 }
@@ -77,7 +77,7 @@ if (parchment_nearby && keyboard_check_pressed(ord("E")) && !has_parchment) {
 }
 
 if (keyboard_check_pressed(ord("T")) && has_parchment) {
-    var _new_parchment = instance_create_layer(x, y, "Instances", obj_parchemin);
+    var _new_parchment = instance_create_layer(x, y, "Instances_1", obj_parchemin);
     has_parchment = false;
 }
 
@@ -94,12 +94,12 @@ if (instance_exists(obj_demon)) {
 		audio_playing = 0;
 	}
 	if (_distance < 350 && _distance > 90 && audio_playing != 1) {
-		audio_sound_gain(current_sound_played, 0.6, 1000);
+		audio_sound_gain(current_sound_played, 0.8, 1000);
 		audio_sound_pitch(current_sound_played, 1);
 		audio_playing = 1;
 	}
 	if (_distance < 90 && audio_playing != 2) {
-		audio_sound_gain(current_sound_played, 0.7, 500);
+		audio_sound_gain(current_sound_played, 1, 500);
 		audio_sound_pitch(current_sound_played, 1.5);
 		audio_playing = 2;
 	}

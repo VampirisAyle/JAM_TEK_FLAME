@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_demon_bas",
-    "path":"sprites/spr_demon_bas/spr_demon_bas.yy",
+    "name":"spr_demon",
+    "path":"sprites/spr_demon/spr_demon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

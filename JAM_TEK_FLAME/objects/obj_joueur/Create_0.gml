@@ -15,5 +15,8 @@ dead = false;
 draw_takup = false;
 demon_spawn = false;
 
+nb_parchemin_burn = 0;
+nb_parchemin_burn_needed = 6;
+
 image_index = 1;
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);

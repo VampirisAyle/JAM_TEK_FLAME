@@ -9,7 +9,8 @@ if(object_exists(obj_joueur) && obj_joueur.dead == false){
 	}
 
 	var _delay = int64((time_for_spawn - time_to_spawn) / 1000);
-	var _summon_txt = "Temps avant l'invocation : ";
+	var _summon_txt = "Temps avant l'invocation : " + string(_delay) ;
+	var _scroolcount_txt = "Parchemin brule : " + string(obj_joueur.nb_parchemin_burn) + "/" + string(obj_joueur.nb_parchemin_burn_needed);
 	var _menu_txt = "[X] - Retourner au menu";
-	draw_text(8, 8 + string_height(_summon_txt), _summon_txt + string(_delay) + "\n" + _menu_txt);
+	draw_text(8, 8 + string_height(_summon_txt), _summon_txt + "\n" + _scroolcount_txt + "\n" + _menu_txt);
 }

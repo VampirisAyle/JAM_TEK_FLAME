@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parchemin",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_firepit","path":"objects/obj_firepit/obj_firepit.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_firepit",
+  "eventList":[],
   "managed":true,
-  "name":"obj_parchemin",
+  "name":"obj_firepit",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_parchemin",
-    "path":"sprites/spr_parchemin/spr_parchemin.yy",
+    "name":"spr_tileset_campfire",
+    "path":"sprites/spr_tileset_campfire/spr_tileset_campfire.yy",
   },
   "spriteMaskId":null,
   "visible":true,

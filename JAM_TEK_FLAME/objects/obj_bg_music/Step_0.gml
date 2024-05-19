@@ -13,6 +13,9 @@ if (currentplayed != PLAYEDSOUND.GAMESOUND && (room == rm_forest1 || room == rm_
 } else if (currentplayed != PLAYEDSOUND.VICTORYSOUND && (room == rm_victory)) {
 	audio_sound_gain(bg_music_game, 0, 1000);
 	audio_sound_gain(bg_music_menu, 0, 1000);
+	if (audio_is_playing(snd_heart_beat))  {
+		audio_sound_gain(snd_heart_beat, 0, 0);
+	}
 	audio_sound_gain(bg_music_victory, 1, 1000);
 	audio_sound_set_track_position(bg_music_victory, 0);
 	currentplayed = PLAYEDSOUND.VICTORYSOUND;

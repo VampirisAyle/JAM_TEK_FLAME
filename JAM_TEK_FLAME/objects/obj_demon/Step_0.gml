@@ -8,21 +8,21 @@ if (instance_exists(obj_joueur)) {
 
 	if (_player_distance_y > 0) {
 		_movey -= _speed;
-		sprite_index = spr_joueur_haut;
+		image_xscale = 0.2;
 		sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 	} else {
 		_movey += _speed;
-		sprite_index = spr_joueur_bas;
+		image_xscale = -0.2;
 		sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 	}
  
 	if (_player_distance_x < 0) {
 		_movex += _speed;
-		sprite_index = spr_joueur_droite;
+		image_xscale = -0.2;
 		sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 	} else {
 		_movex -= _speed;
-		sprite_index = spr_joueur_gauche;
+		image_xscale = 0.2;
 		sprite_set_speed(sprite_index, _sprite_speed, spritespeed_framespersecond);
 	} 
 
