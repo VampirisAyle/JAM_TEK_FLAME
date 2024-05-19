@@ -19,6 +19,11 @@ if (keyboard_check(vk_shift) && endurance_regeneration == false) {
 	current_endurance -= 1;
 }
 
+if (keyboard_check(ord("X"))) {
+	room_restart();
+	room_goto(rm_menu1);
+}
+
 if (keyboard_check(ord("R")) && dead == true) {
 	room_restart();
 }
@@ -103,6 +108,8 @@ if (dead == true) {
 
 //SPAWN
 if (obj_hud.time_to_spawn >= obj_hud.time_for_spawn && demon_spawn == false) {
-	var _demon = instance_create_layer(722, 666, "Instances", obj_demon);
+	if (instance_exists(obj_firelight)) {
+		var _demon = instance_create_layer(obj_firelight.x, obj_firelight.y - 80, "Instances", obj_demon);
+	}
 	demon_spawn = true;
 }

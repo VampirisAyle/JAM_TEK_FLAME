@@ -3,8 +3,8 @@ if (instance_exists(obj_joueur)) {
 	var _movey = 0;
 	var _speed = player_speed;
 	var _sprite_speed = sprite_speed;
-	var _player_distance_x = x - layer_instance_get_instance(obj_joueur).x;
-	var _player_distance_y = y - layer_instance_get_instance(obj_joueur).y;
+	var _player_distance_x = x - obj_joueur.x;
+	var _player_distance_y = y - obj_joueur.y;
 
 	if (_player_distance_y > 0) {
 		_movey -= _speed;

@@ -9,5 +9,7 @@ if(object_exists(obj_joueur) && obj_joueur.dead == false){
 	}
 
 	var _delay = int64((time_for_spawn - time_to_spawn) / 1000);
-	draw_text(8, 8 + spr_endurance_arriere.sprite_height, "Temps avant l'invocation : " + (string(_delay)));
+	var _summon_txt = "Temps avant l'invocation : ";
+	var _menu_txt = "[X] - Retourner au menu";
+	draw_text(8, 8 + string_height(_summon_txt), _summon_txt + string(_delay) + "\n" + _menu_txt);
 }
